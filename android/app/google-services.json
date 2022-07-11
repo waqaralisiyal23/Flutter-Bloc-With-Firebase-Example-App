@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "857729266715",
+    "project_id": "flutter-bloc-firebase-ex-cd600",
+    "storage_bucket": "flutter-bloc-firebase-ex-cd600.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857729266715:android:db715cdb582537df95b4be",
+        "android_client_info": {
+          "package_name": "com.codewithwaqar.blocwithfirebaseexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857729266715-56b0668ft3294mltq9ou37tetqh8h1mc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8JDL6OLiaB6SKu2f2dUAUO8MVsda_rzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857729266715-56b0668ft3294mltq9ou37tetqh8h1mc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
