@@ -1,9 +1,16 @@
 PODS:
+  - Firebase/Auth (9.2.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 9.2.0)
   - Firebase/CoreOnly (9.2.0):
     - FirebaseCore (= 9.2.0)
   - Firebase/Storage (9.2.0):
     - Firebase/CoreOnly
     - FirebaseStorage (~> 9.2.0)
+  - firebase_auth (3.4.1):
+    - Firebase/Auth (= 9.2.0)
+    - firebase_core
+    - Flutter
   - firebase_core (1.19.1):
     - Firebase/CoreOnly (= 9.2.0)
     - Flutter
@@ -12,6 +19,11 @@ PODS:
     - firebase_core
     - Flutter
   - FirebaseAppCheckInterop (9.2.0)
+  - FirebaseAuth (9.2.0):
+    - FirebaseCore (~> 9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.7)
   - FirebaseAuthInterop (9.2.0)
   - FirebaseCore (9.2.0):
     - FirebaseCoreDiagnostics (~> 9.0)
@@ -41,11 +53,21 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
   - GoogleUtilities/Environment (7.7.0):
     - PromisesObjC (< 3.0, >= 1.2)
   - GoogleUtilities/Logger (7.7.0):
     - GoogleUtilities/Environment
+  - GoogleUtilities/Network (7.7.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
   - "GoogleUtilities/NSData+zlib (7.7.0)"
+  - GoogleUtilities/Reachability (7.7.0):
+    - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (2.0.0)
   - image_picker_ios (0.0.1):
     - Flutter
@@ -57,6 +79,7 @@ PODS:
   - PromisesObjC (2.1.1)
 
 DEPENDENCIES:
+  - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_storage (from `.symlinks/plugins/firebase_storage/ios`)
   - Flutter (from `Flutter`)
@@ -66,6 +89,7 @@ SPEC REPOS:
   trunk:
     - Firebase
     - FirebaseAppCheckInterop
+    - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseCoreDiagnostics
@@ -80,6 +104,8 @@ SPEC REPOS:
     - PromisesObjC
 
 EXTERNAL SOURCES:
+  firebase_auth:
+    :path: ".symlinks/plugins/firebase_auth/ios"
   firebase_core:
     :path: ".symlinks/plugins/firebase_core/ios"
   firebase_storage:
@@ -91,9 +117,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Firebase: 4ba896cb8e5105d4b9e247e1c1b6222b548df55a
+  firebase_auth: 1093e604044edc89df1e9119daeb82a5b0ef5fac
   firebase_core: 9e09bbfbf5467e459822850732f5fb648f5b1927
   firebase_storage: 866ba3ca47efe4c4ea66aff966dda0d47984dc28
   FirebaseAppCheckInterop: 003b4882460c2827d1e2a1a81b65e88440eb01fa
+  FirebaseAuth: 1c574ab64a051dd86dbe7fd5a3f86b58155b3482
   FirebaseAuthInterop: aa9cf4d66b00e9f1e48a1aaa2aefa821fc741127
   FirebaseCore: 0e27f2a15d8f7b7ef11e7d93e23b1cbab55d748c
   FirebaseCoreDiagnostics: ad3f6c68b7c5b63b7cf15b0785d7137f05f32268

@@ -1,6 +1,7 @@
-# blocwithfirebaseexample
+# Bloc with Firebase Example (Photo Gallery)
 
-A new Flutter project.
+A simple photo gallery app using Bloc and Firebase. The main purpose of this app is learning
+Flutter Bloc.
 
 ## Getting Started
 
